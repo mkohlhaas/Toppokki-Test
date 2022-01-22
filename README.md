@@ -1,3 +1,4 @@
+```
 Sehr geehrter Herr ...,
 
 gemäß dem Nürnberger Kodex gilt u.a.:
@@ -29,3 +30,4 @@ strafrechlich verfolgt werden kann.
 
 Mit freundlichen Grüßen,
 Michaela Kohlhaas
+```
