@@ -16,7 +16,7 @@ sleep = sleepImpl >>> toAffE
 
 sendEmail :: Mdb -> Aff Unit
 sendEmail mdb = do
-  browser <- T.launch { headless: false }
+  browser <- T.launch { headless: true }
   page <- T.newPage browser
   T.goto (T.URL $ "https://www.bundestag.de/services/formular/contactform?mdbId=" <> mdb.id) page
   _ <- T.type_ (T.Selector "#formelement-444044") "Covid-19 Impfpflicht" {} page
