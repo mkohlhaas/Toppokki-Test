@@ -1,12 +1,18 @@
 module Main where
 
-import Prelude (bind, discard, pure, unit, (<>), ($))
+import Prelude (bind, discard, pure, unit, (<>), ($), (>>>))
 import Data.Foldable (for_)
 import Data.Unit (Unit)
 import Effect (Effect)
 import Effect.Aff (Aff, launchAff_)
-import MdBs
+import MdBs (Mdb, emailText, mdbs)
 import Toppokki as T
+import Control.Promise (Promise, toAffE)
+
+foreign import sleepImpl :: Int -> Effect (Promise Unit)
+
+sleep :: Int -> Aff Unit
+sleep = sleepImpl >>> toAffE
 
 sendEmail :: Mdb -> Aff Unit
 sendEmail mdb = do
@@ -21,8 +27,9 @@ sendEmail mdb = do
   _ <- T.screenshot { path: "./test/" <> mdb.id <> ".png", fullPage: true } page
   _ <- T.click (T.Selector "button.bt-button-message") page
   _ <- T.waitForNavigation { waitUntil: T.networkIdle2 } page
+  sleep 600000
   -- _ <- T.screenshot { path: "./test/" <> mdb.id <> "_confirmation" <> ".png", fullPage: true } page
-  -- T.close browser
+  T.close browser
   pure unit
 
 main :: Effect Unit

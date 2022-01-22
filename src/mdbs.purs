@@ -23,25 +23,26 @@ emailText = "\n\ngemäß dem Nürnberger Kodex gilt u.a.: \"Die freiwillige Zust
 -- { salutation: "Sehr geehrte Frau Luise Amtsberg,", id: "857104" }
 -- { salutation: "Sehr geehrte Frau Dagmar Andres,", id: "860980" }
 -- { salutation: "Sehr geehrter Herr Niels Annen,", id: "857106" }
+-- { salutation: "Sehr geehrter Herr Johannes Arlt,", id: "860828" }
+-- { salutation: "Sehr geehrte Frau Christine Aschenberg-Dugnus,", id: "857094" }
+-- { salutation: "Sehr geehrter Herr Andreas Audretsch,", id: "860496" }
+-- { salutation: "Sehr geehrter Herr Artur Auernhammer,", id: "857084" }
+
 mdbs :: Array Mdb
 mdbs =
   [
-   { salutation: "Sehr geehrter Herr Johannes Arlt,", id: "860828" }
-  , { salutation: "Sehr geehrte Frau Christine Aschenberg-Dugnus,", id: "857094" }
-  , { salutation: "Sehr geehrter Herr Andreas Audretsch,", id: "860496" }
-  , { salutation: "Sehr geehrter Herr Artur Auernhammer,", id: "857084" }
-  -- , { salutation: "Sehr geehrter Herr Peter Aumer,", id: "857090" }
-  -- , { salutation: "Sehr geehrter Herr Maik Außendorf,", id: "860932" }
-  -- , { salutation: "Sehr geehrter Herr Tobias Bacherle,", id: "860138" }
-  -- , { salutation: "Sehr geehrte Frau Carolin Bachmann,", id: "863318" }
-  -- , { salutation: "Sehr geehrte Frau Lisa Badum,", id: "857148" }
-  -- , { salutation: "Sehr geehrte Frau Heike Baehrens,", id: "857144" }
-  -- , { salutation: "Sehr geehrte Frau Dorothee Bär,", id: "857110" }
-  -- , { salutation: "Sehr geehrter Herr Karl Bär,", id: "860334" }
-  -- , { salutation: "Sehr geehrte Frau Annalena Baerbock,", id: "857150" }
-  -- , { salutation: "Sehr geehrte Frau Ulrike Bahr,", id: "857152" }
-  -- , { salutation: "Sehr geehrter Herr Daniel Baldy,", id: "861186" }
-  -- , { salutation: "Sehr geehrter Herr Felix Banaszak,", id: "860904" }
+   { salutation: "Sehr geehrter Herr Peter Aumer,", id: "857090" }
+  , { salutation: "Sehr geehrter Herr Maik Außendorf,", id: "860932" }
+  , { salutation: "Sehr geehrter Herr Tobias Bacherle,", id: "860138" }
+  , { salutation: "Sehr geehrte Frau Carolin Bachmann,", id: "863318" }
+  , { salutation: "Sehr geehrte Frau Lisa Badum,", id: "857148" }
+  , { salutation: "Sehr geehrte Frau Heike Baehrens,", id: "857144" }
+  , { salutation: "Sehr geehrte Frau Dorothee Bär,", id: "857110" }
+  , { salutation: "Sehr geehrter Herr Karl Bär,", id: "860334" }
+  , { salutation: "Sehr geehrte Frau Annalena Baerbock,", id: "857150" }
+  , { salutation: "Sehr geehrte Frau Ulrike Bahr,", id: "857152" }
+  , { salutation: "Sehr geehrter Herr Daniel Baldy,", id: "861186" }
+  , { salutation: "Sehr geehrter Herr Felix Banaszak,", id: "860904" }
   -- , { salutation: "Sehr geehrte Frau Nezahat Baradari,", id: "857122" }
   -- , { salutation: "Sehr geehrter Herr Thomas Bareiß,", id: "857138" }
   -- , { salutation: "Sehr geehrter Herr Sören Bartol,", id: "857132" }
